@@ -67,6 +67,16 @@ end
 
 
 def all_holidays_with_bbq(holiday_hash)
+   new_holidays = []
+   holiday_hash.each do |season, holiday_names|
+    holiday_names.each do |holidays, supplies|
+      if supplies == "BBQ"
+        new_holidays << holidays
+      end 
+    end 
+  
+  # iterate top, to get season and holiday names
+  # holiday name points to nested hash if supplies array includes? BBQ if Yes add holiday name to new array return new array 
 
 end 
 # holiday_hash.sort_by {|key, value| value['BBQ']}
