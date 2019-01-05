@@ -48,13 +48,13 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday_new|
-    holiday_new.each do |holiday, supplies|
-    binding.pry 
-    puts "  #{season.to_s.capitalize}: holiday_new { |word| word.split("_").capitalize}.join(", "): "#{supplies.join(",")}""
-  end 
-    
+    puts "#{season.to_s.capitalize}:"
+  holiday_new.each do |holiday, supplies|
+    puts "  #{holiday.to_s.split("_").map { |word| word.capitalize }
+    .join(" ")}: #{supplies.join(", ")}"
   
-end   
+  end 
+  end   
 end 
 
   # iterate through holiday_hash and print items such that your readout #resembles:
