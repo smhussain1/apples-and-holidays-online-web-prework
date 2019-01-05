@@ -69,13 +69,16 @@ end
 def all_holidays_with_bbq(holiday_hash)
    new_holidays = []
    holiday_hash.each do |season, holiday_names|
+    # binding.pry 
     holiday_names.each do |holidays, supplies|
+      #binding.pry 
       if supplies.include? "BBQ"
         new_holidays << holidays
-        new_holidays
-      end 
-    end 
+       end
+       end 
   end 
+  new_holidays
+
 end 
   
   # iterate top, to get season and holiday names
