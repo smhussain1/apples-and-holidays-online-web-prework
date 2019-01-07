@@ -74,8 +74,15 @@ def all_holidays_with_bbq(holiday_hash)
       #binding.pry 
       if supplies.include? "BBQ"
         new_holidays << holidays
+<<<<<<< HEAD
        end
        end 
+=======
+       
+      end
+      
+    end 
+>>>>>>> 3da1cf21b18bd35866ea4e3ecd41af11b1e4afc5
   end 
   new_holidays
 
